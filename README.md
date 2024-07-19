@@ -21,11 +21,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 #Deploy via docker
+
 #Log in Azure 
+
 #Create a container registry with name nextjsdockeronazure
+
 #Run below command to create image
+
 docker build -t nextjsdockeronazure.azurecr.io/nextjsdockeronazure:latest .
+
 #Push the image to registry
+
 docker push nextjsdockeronazure.azurecr.io/nextjsdockeronazure:latest
+
 #Run the container
+
 docker run -d -p 3000:3000 nextjsdockeronazure.azurecr.io/nextjsdockeronazure:latest
